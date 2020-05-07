@@ -150,6 +150,7 @@ header {
 }
 
 
+
 /* Css slut til forsiden*/
 
 
@@ -159,6 +160,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin:6px;
     border-collapse: collapse;
     border-radius: 25px;
     align-content: center; 
@@ -197,8 +199,7 @@ h3 {
 }
 
 .grid-container-chokolade {
-    width:100%;
-    height: auto;
+    width:auto;
     background-color: #FDFDEB;
     border-radius: 25px;
     display: grid;
@@ -247,7 +248,7 @@ h3 {
 
 
 .grid-container-karamel {
-    width:100%;
+    width:auto;
     background-color: #FDFDEB;
     border-radius: 25px;
     display: grid;
@@ -272,7 +273,7 @@ h3 {
 
 
 .grid-container-boern {
-    width:100%;
+    width: auto;
     background-color: #FDFDEB;
     border-radius: 25px;
     display: grid;
@@ -642,6 +643,7 @@ body {
     
 table {
     border-collapse: collapse;
+    border-radius: 25px;
     align-content: center; 
 
     
@@ -850,6 +852,7 @@ th {
         
 table {
     border-collapse: collapse;
+    border-radius: 25px;
     align-content: center;     
 }
 
@@ -887,54 +890,52 @@ th {
         padding-top: 20px;
         text-align: center;
         margin: 20px;
-        width: auto;
 
     }
 
     .chokokiks {
         grid-area: 1 / 1 / 2 / 2;
-        
-        
+        padding: 10px;
     }
 
     .KEX {
         grid-area: 1 / 2 / 2 / 3;
-        
+        padding: 10px;
     }
 
     .kinder {
         grid-area: 1 / 3 / 2 / 4;
-        
+        padding: 10px;
     }
 
     .oreo {
         grid-area: 1 / 4 / 2 / 5;
-       
+        padding: 10px;
     }
 
     .p-tearte {
         grid-area: 1 / 5 / 2 / 6;
-        
+        padding: 10px;
     }
 
     .smarties {
         grid-area: 1 / 6 / 2 / 7;
-        
+        padding: 10px;
     }
 
     .smil-choko {
         grid-area: 1 / 7 / 2 / 8;
-        
+        padding: 10px;
     }
 
     .toblerone {
         grid-area: 1 / 8 / 2 / 9;
-        
+        padding: 10px;
     }
 
     .lion {
         grid-area: 1 / 9 / 2 / 10;
-        
+        padding: 10px;
     }
 
 
@@ -946,7 +947,6 @@ th {
         text-align: center;
         margin: 20px;
         justify-content: space-between;
-        width: auto;
     }
 
     .salt-karamel {
@@ -973,8 +973,6 @@ th {
         padding-top: 20px;
         text-align: center;
         margin: 20px;
-        width: auto;
-    
 
     }
 
@@ -1062,7 +1060,6 @@ th {
     .ft-main-tekst {
         width: 33%;
         justify-content: space-evenly;
-        
     }
 
     .ft-social-list {
@@ -1121,4 +1118,62 @@ th {
 }
 }
 
+/* CSS START instagram billeder forside */
 
+/*MEDIA QUERY MOBILE */
+@media all and (max-width: 599px) {
+    .instagram {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .insta-2 {
+        
+    display: none;
+    }
+    
+}
+
+
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+@media all and (min-width: 600px) {
+    .instagram {
+        display: flex;
+        flex-direction: column;
+    }
+        .trustpilot {
+    display: flex;
+    flex-direction: column;
+    
+}
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    .instagram {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .insta-1 {
+     margin-left:auto;
+    display: flex;  
+    }
+    
+      .insta-2 {
+     margin-right:auto;
+    min-height: inherit;
+    }
+    }
+
+.instagram {
+    
+background-color: #FAFAFA;
+    
+}
+
+
+/* CSS slut instagram billeder forside */
