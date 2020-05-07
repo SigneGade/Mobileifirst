@@ -198,6 +198,7 @@ h3 {
 
 .grid-container-chokolade {
     width:100%;
+    height: auto;
     background-color: #FDFDEB;
     border-radius: 25px;
     display: grid;
